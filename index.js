@@ -12,10 +12,13 @@ function reloadTaskList() {
     let taskListMap = taskList.map(function (task) {
         return `
         <div class="task">
+
             <p class="taskItem">${task}</p>
+        
             <button class="deleteBtn" value="${taskList.indexOf(task)}" onclick="deleteTask(this.value)">
-            <img class="iconDelete" src="/Icons/deleteIcon.svg">
+                <img class="iconDelete" src="/Icons/deleteIcon.svg">
             </button>
+
             
         </div>
         `

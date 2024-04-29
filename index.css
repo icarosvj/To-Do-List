@@ -19,6 +19,7 @@
     user-select: none;
     box-sizing: border-box;
     font-family: sf-regular;
+    text-rendering: geometricPrecision;
 }
 
 body {
@@ -118,24 +119,29 @@ button {
 
 .taskItem {
     font-family: sf-semi;
-    font-size: 2rem;
+    width: 80%;
+    text-align: start;
+    font-size: 1.6rem;
     color: #0B061C;
 }
 
 .iconTask,
-.iconDelete {
+.iconDelete,
+.iconDone {
     filter: invert(2%) sepia(55%) saturate(5310%) hue-rotate(240deg) brightness(99%) contrast(100%);
     margin: 0px;
     padding: 0px;
 }
 
-.deleteBtn {
+.deleteBtn,
+.doneBtn {
     background-color: #00000000;
     cursor: pointer;
 }
 
 
-.deleteBtn img {
+.deleteBtn img,
+.doneBtn img {
     margin: 0px;
     width: 30px;
 }
