@@ -15,6 +15,10 @@ function reloadTaskList() {
 
             <p class="taskItem">${task}</p>
         
+            <button class="taskNoteBtn" value="${taskList.indexOf(task)}" onclick="openNotesTask(this.value)">
+                <img class="iconNotes" src="/Icons/iconNotes.svg">
+            </button>
+
             <button class="deleteBtn" value="${taskList.indexOf(task)}" onclick="deleteTask(this.value)">
                 <img class="iconDelete" src="/Icons/deleteIcon.svg">
             </button>
@@ -48,4 +52,11 @@ function addTaskOnList() {
 function deleteTask(index) {
     delete taskList[index]
     reloadTaskList()
+}
+
+// NOTES SECTION
+
+function openNotesTask(index) {
+    alert(index)
+    openNotesVisual()
 }

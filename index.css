@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to left, #d6d3e0, #FAF9FD);
+    background-image: linear-gradient(to top, #eeecf3, #FAF9FD);
     font-family: sf-regular;
 }
 
@@ -40,14 +40,13 @@ button {
 }
 
 #listContainer {
-    width: 30vw;
-    height: 90vh;
+    width: 35vw;
 
     border-radius: 30px;
-    background-image: linear-gradient(to top, #d6d3e0, #FAF9FD);
-    padding: 25px;
+    background-image: linear-gradient(to top, #eeecf3, #FAF9FD);
+    padding: 35px;
     text-align: center;
-    box-shadow: 0px 10px 30px #0000002f;
+    box-shadow: 0px 10px 30px #00000015;
     border: 3px solid #ffffff;
 }
 
@@ -88,7 +87,7 @@ button {
     font-family: sf-bold;
 
     padding: 10px;
-    left: 55.5%;
+    left: 57.5%;
 
     background-image: linear-gradient(#0B061C, #0d071f);
     color: #E8E1F3;
@@ -127,21 +126,91 @@ button {
 
 .iconTask,
 .iconDelete,
-.iconDone {
+.iconNotes {
     filter: invert(2%) sepia(55%) saturate(5310%) hue-rotate(240deg) brightness(99%) contrast(100%);
     margin: 0px;
     padding: 0px;
 }
 
 .deleteBtn,
-.doneBtn {
+.taskNoteBtn,
+.noteCloseBtn {
     background-color: #00000000;
     cursor: pointer;
+
 }
 
 
 .deleteBtn img,
-.doneBtn img {
+.taskNoteBtn img,
+.noteCloseBtn img {
     margin: 0px;
     width: 30px;
+}
+
+.iconDelete:hover,
+.iconNotes:hover {
+    filter: invert(99%) sepia(30%) saturate(2692%) hue-rotate(182deg) brightness(91%) contrast(93%);
+}
+
+.deleteBtn:hover,
+.taskNoteBtn:hover {
+    background-color: #0B061C;
+    border-radius: 5px;
+    padding: 3px;
+    transition: 1s;
+}
+
+.deleteBtn,
+.taskNoteBtn {
+    padding: 3px;
+}
+
+
+/*Open Notes*/
+
+.mainTaskContainer {
+    position: fixed;
+    width: 35vw;
+
+    border-radius: 30px;
+    background-image: linear-gradient(to top, #eeecf3, #FAF9FD);
+    padding: 35px;
+    text-align: left;
+    box-shadow: 0px 10px 30px #00000015;
+    border: 3px solid #ffffff;
+
+}
+
+.titleTaskSect {
+    display: flex;
+    margin-bottom: 1rem;
+    box-shadow: 0px 10px 30px #0000000c;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.noteTitleTask {
+    font-family: sf-bold;
+    font-size: 2rem;
+    width: 100%;
+    color: #0B061C;
+}
+
+.noteTextTask {
+    font-size: 1.3rem;
+    color: #0B061C;
+
+    resize: none;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to top, #eeecf3, #FAF9FD);
+    box-shadow: 0px 10px 30px #0000000c;
+    border-radius: 15px;
+    width: 100%;
+    padding: 25px;
+}
+
+.noteCloseBtn {
+    filter: invert(4%) sepia(74%) saturate(2996%) hue-rotate(252deg) brightness(100%) contrast(99%);
 }
