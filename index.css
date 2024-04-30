@@ -29,7 +29,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top, #eeecf3, #FAF9FD);
+    background-image: url(/Icons/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-image: linear-gradient(to top, #eeecf3, #FAF9FD);*/
     font-family: sf-regular;
 }
 
@@ -41,13 +44,13 @@ button {
 
 #listContainer {
     width: 35vw;
-
     border-radius: 30px;
-    background-image: linear-gradient(to top, #eeecf3, #FAF9FD);
+    background-image: linear-gradient(to top, #eeecf3a8, #FAF9FD);
     padding: 35px;
     text-align: center;
     box-shadow: 0px 10px 30px #00000015;
     border: 3px solid #ffffff;
+
 }
 
 .listTitle {
@@ -105,7 +108,6 @@ button {
 #listUL {
     width: 100%;
 }
-
 
 
 .task {
@@ -180,9 +182,10 @@ button {
     box-shadow: 0px 10px 30px #00000015;
     border: 3px solid #ffffff;
 
-    display: block;
-    left: 5px;
-    top: 5px;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .titleTaskSect {
@@ -198,6 +201,8 @@ button {
     font-size: 2rem;
     width: 100%;
     color: #0B061C;
+
+    background-color: #00000000;
 }
 
 .noteTextTask {
@@ -216,4 +221,8 @@ button {
 
 .noteCloseBtn {
     filter: invert(4%) sepia(74%) saturate(2996%) hue-rotate(252deg) brightness(100%) contrast(99%);
+}
+
+.active {
+    display: block;
 }
