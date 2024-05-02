@@ -1,16 +1,16 @@
 @font-face {
     font-family: sf-regular;
-    src: url(/Fonts/sf-regular.otf);
+    src: url(Fonts/sf-regular.otf);
 }
 
 @font-face {
     font-family: sf-semi;
-    src: url(/Fonts/sf-semi.otf);
+    src: url(Fonts/sf-semi.otf);
 }
 
 @font-face {
     font-family: sf-bold;
-    src: url(/Fonts/sf-bold.otf);
+    src: url(Fonts/sf-bold.otf);
 }
 
 * {
@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/Icons/Background.png);
+    background-image: url(Icons/Background.png);
     background-size: cover;
     background-repeat: no-repeat;
     /*background-image: linear-gradient(to top, #eeecf3, #FAF9FD);*/

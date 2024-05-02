@@ -18,11 +18,11 @@ function reloadTaskList() {
             <p class="taskItem">${task.title}</p>
         
             <button class="taskNoteBtn" value="${taskList.indexOf(task)}" onclick="openNote(this.value)">
-                <img class="iconNotes" src="/Icons/iconNotes.svg">
+                <img class="iconNotes" src="Icons/iconNotes.svg">
             </button>
 
             <button class="deleteBtn" value="${taskList.indexOf(task)}" onclick="deleteTask(this.value)">
-                <img class="iconDelete" src="/Icons/deleteIcon.svg">
+                <img class="iconDelete" src="Icons/deleteIcon.svg">
             </button>
             <!-- Notes -->
             <div class="mainTaskContainer" id="taskId${taskList.indexOf(task)}" >
@@ -31,7 +31,7 @@ function reloadTaskList() {
                 <input class="noteTitleTask" value="${task.title}" spellcheck="false" id="taskTitle${taskList.indexOf(task)}">
                 <!--<p class="noteTitleTask">${task.title}</p>-->
                 <button class="noteCloseBtn" value="${taskList.indexOf(task)}" onclick="closeNotesTask(this.value)">
-                    <img class="iconCloseTask" src="/Icons/iconClose.svg" alt="CloseNote">
+                    <img class="iconCloseTask" src="Icons/iconClose.svg" alt="CloseNote">
                 </button>
             </div>
             <textarea name="noteTextTask" id="task${taskList.indexOf(task)}" class="noteTextTask" rows="10" spellcheck="false" placeholder="Add Your Note">${task.text}</textarea>
